@@ -1,0 +1,39 @@
+html{
+   margin-bottom: 65px;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.custom-toggler.navbar-toggler {
+  border-color: rgb(0,0,0);
+.navbar}
+{
+float: bottom;
+}
+.navbar-toggler {
+    float: right;
+
+}
+#chat{
+    position: relative;
+    left: 17px;
+}
+#users{
+  float: right;
+  position: relative;
+  right: 10px;
+  color: white;
+}
+#menu-icon{
+    float: right;
+    position: relative;
+    color: white;
+}
+.navbar-nav.navy
+{
+  float: right;
+  display: inline-block;
+  margin: 5px;
+}
+

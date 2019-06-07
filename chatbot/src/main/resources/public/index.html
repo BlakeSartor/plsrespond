@@ -2,16 +2,44 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WebsSockets</title>
+    <title>PlsRespond</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </head>
 <body>
-<div id="chatControls">
-    <input id="message" placeholder="Type your message">
-    <button id="send">Send</button>
+<div class="jumbotron" style="margin-bottom: 0px">
+    <h1>Pls Respond</h1>
+
 </div>
-<ul id="userlist"> <!-- Built by JS --> </ul>
-<div id="chat">    <!-- Built by JS --> </div>
+<nav class="navbar navbar-dark bg-dark fixed-bottom">
+    <div class="navbar-brand" href="#">
+        <div id="chatControls">
+            <input id="message" placeholder="Message">
+            <button id="send">Send</button>
+        </div>
+    </div>
+    <div class="navbar-nav ml-auto">
+        <div id="users">
+            Active Users
+        </div>
+    </div>
+    <button class="btn btn-dark navbar-toggler" data-toggle="collapse" data-target="#menu-icon">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ml-auto" id="menu-icon">
+        <ul class="navbar-nav navy">
+            <ul id="userlist"></ul>
+        </ul>
+    </div>
+</nav>
+
+<div id="chat"></div>
 <script src="messagerClient.js"></script>
 </body>
 </html>
