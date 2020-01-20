@@ -1,6 +1,5 @@
-html{
-   margin-bottom: 65px;
-}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -35,5 +34,10 @@ float: bottom;
   float: right;
   display: inline-block;
   margin: 5px;
-}
 
+.mobile-margin {
+    margin-bottom: 120px;
+}
+.non-mobile-margin {
+    margin-bottom: 100px;
+}

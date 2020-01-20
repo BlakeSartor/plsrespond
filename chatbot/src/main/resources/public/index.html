@@ -13,12 +13,17 @@
     </script>
 </head>
 <body>
-<div class="jumbotron" style="margin-bottom: 0px">
+<div class="non-mobile-margin visible-xl"></div>
+
+<div class="mobile-margin visible-xs"></div>
+
+
+<div class="jumbotron sticky-top" style="margin-bottom: 0px">
     <h1>Pls Respond</h1>
 
 </div>
 <nav class="navbar navbar-dark bg-dark fixed-bottom">
-    <div class="navbar-brand" href="#">
+    <div class="navbar-brand">
         <div id="chatControls">
             <input id="message" placeholder="Message">
             <button id="send">Send</button>
@@ -38,7 +43,6 @@
         </ul>
     </div>
 </nav>
-
 <div id="chat"></div>
 <script src="messagerClient.js"></script>
 </body>
